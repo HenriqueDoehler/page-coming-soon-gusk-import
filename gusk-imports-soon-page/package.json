@@ -1,0 +1,23 @@
+{
+  "name": "gusk-imports-soon-page",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.74.6",
+    "@react-three/fiber": "^8.13.0",
+    "@react-three/postprocessing": "^2.14.9",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.4",
+    "next": "13.4.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "^6.0.0-rc.3",
+    "three": "^0.153.0"
+  }
+}
