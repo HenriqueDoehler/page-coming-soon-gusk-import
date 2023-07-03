@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 1000;
 }
 
 .canvas{
@@ -21,12 +22,12 @@
   margin-top: 10%;
   margin-bottom: 50px;
   
-  @media (max-width: 1024px) {
+  @media (max-width: 2024px) {
     width: 500px;
   }
 
 
-  @media (max-width: 768px) {
+  @media (max-width: 2768px) {
     width: 400px;
   }
 
@@ -34,4 +35,10 @@
   @media (max-width: 480px) {
     width: 100px;
   }
+}
+
+.instagramButton {
+  position: relative;
+  z-index: 2; /* Ajuste este valor para que o botão apareça acima do canvas */
+  /* Adicione mais estilos conforme necessário */
 }

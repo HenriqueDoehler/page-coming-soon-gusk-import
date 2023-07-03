@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 import styles from "@/styles/Home.module.css";
 import dynamic from "next/dynamic";
@@ -19,13 +20,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <DynamicComponentWithNoSSRModel1 speed={1} />
+        <DynamicComponentWithNoSSRModel1 speed={0.1} />
         <img
           className={styles.logoImgGusk}
           src={"/guskLogosvg.svg"}
           alt="logo"
         />
         <Overlay />
+        <Link href="https://www.instagram.com/guskimports">
+          <span target="_blank" rel="noopener noreferrer">
+            <div className={styles.instagramButton}>
+              <img
+                src="/instaIcon.png" // Ajuste para o caminho correto do seu ícone
+                alt="Instagram Icon"
+                width={50} // Ajuste para o tamanho desejado
+                height={50} // Ajuste para o tamanho desejado
+              />
+            </div>
+          </span>
+        </Link>
       </main>
     </>
   );
