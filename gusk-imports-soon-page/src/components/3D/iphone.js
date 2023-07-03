@@ -172,18 +172,18 @@ function Iphone({ index, z, speed, props }) {
 }
 
 export default function Iphones({
-  count = 25,
+  count = 3,
   depth = 30,
   easing = (x) => Math.sqrt(1 - Math.pow(x - 1, 2)),
 }) {
   return (
     <div className={styles.canvas}>
       <Canvas
-        gl={{ antialias: false }}
+        gl={{ antialias: true, dpr: [1, 2] }}
         dpr={[1, 1.5]}
         camera={{ position: [0, 0, 10], fov: 45, near: 0.01, far: depth + 30 }}
       >
-        <color attach="background" args={["#5D5654"]} />
+        <color attach="background" args={["#whitesmoke"]} />
         <spotLight
           position={[10, 20, 10]}
           penumbra={1}

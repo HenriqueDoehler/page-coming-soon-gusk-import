@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+
 import styles from "@/styles/Home.module.css";
 import dynamic from "next/dynamic";
 import Overlay from "@/layout/overlay";
@@ -20,6 +20,11 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <DynamicComponentWithNoSSRModel1 speed={1} />
+        <img
+          className={styles.logoImgGusk}
+          src={"/guskLogosvg.svg"}
+          alt="logo"
+        />
         <Overlay />
       </main>
     </>
