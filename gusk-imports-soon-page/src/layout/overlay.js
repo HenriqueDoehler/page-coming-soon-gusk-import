@@ -39,8 +39,8 @@ export default function Overlay() {
   }, []);
 
   return (
-    <Container>
-      <EmBreve $show={showEmBreve}>Em breve...</EmBreve>
-    </Container>
+    // <Container>
+    <EmBreve $show={showEmBreve}>Em breve...</EmBreve>
+    // </Container>
   );
 }
