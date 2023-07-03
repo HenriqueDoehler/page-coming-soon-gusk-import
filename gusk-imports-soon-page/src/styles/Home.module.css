@@ -15,6 +15,7 @@
 }
 
 .logoImgGusk{
+  width: 100px;
   display: flex;
   z-index: 100;
   margin-top: 10%;
