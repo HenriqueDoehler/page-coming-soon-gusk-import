@@ -19,7 +19,7 @@ function Iphone({ index, z, speed, props }) {
 
     x: THREE.MathUtils.randFloatSpread(2),
 
-    spin: THREE.MathUtils.randFloat(8, 12),
+    spin: THREE.MathUtils.randFloat(8, 10),
 
     rX: Math.random() * Math.PI,
     rZ: Math.random() * Math.PI,
@@ -172,14 +172,14 @@ function Iphone({ index, z, speed, props }) {
 }
 
 export default function Iphones({
-  count = 3,
+  count = 6,
   depth = 30,
   easing = (x) => Math.sqrt(1 - Math.pow(x - 1, 2)),
 }) {
   return (
     <div className={styles.canvas}>
       <Canvas
-        gl={{ antialias: true, dpr: [1, 2] }}
+        gl={{ antialias: true }}
         dpr={[1, 1.5]}
         camera={{ position: [0, 0, 10], fov: 45, near: 0.01, far: depth + 30 }}
       >
@@ -196,7 +196,7 @@ export default function Iphones({
             key={i}
             index={i}
             z={Math.round(easing(i / count) * depth)}
-            speed={1}
+            speed={0.1}
           />
         ))}
         <Environment preset="sunset" />
