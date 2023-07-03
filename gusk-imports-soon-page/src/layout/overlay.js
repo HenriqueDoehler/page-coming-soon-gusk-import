@@ -25,7 +25,7 @@ export default function Overlay() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowEmBreve(true);
-    }, 3000);
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
