@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+@font-face {
+  font-family: 'SF UI Display Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SF UI Display Bold'), url('/sfui.woff') format('woff');
+  }
 
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: 'Comfortaa', cursive;
+  --font-mono: 'SF UI Display Bold', fallback, sans-serif;
 
    
   
