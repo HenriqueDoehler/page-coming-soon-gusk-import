@@ -21,7 +21,7 @@ const EmBreve = styled.h1`
   text-align: center;
   opacity: 0;
   animation: ${(props) =>
-    props.show
+    props.$show
       ? css`
           ${grow} 3s ease-in-out forwards
         `
@@ -40,7 +40,7 @@ export default function Overlay() {
 
   return (
     <Container>
-      <EmBreve show={showEmBreve}>Em breve...</EmBreve>
+      <EmBreve $show={showEmBreve}>Em breve...</EmBreve>
     </Container>
   );
 }
